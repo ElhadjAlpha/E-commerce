@@ -1,0 +1,36 @@
+### Symfony ###
+.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/*/decrypt.private.php
+/public/bundles/
+/var/
+
+### PHPUnit ###
+/phpunit.xml
+/.phpunit.cache/
+
+### Symfony Asset Mapper ###
+/public/assets/
+/assets/vendor/
+
+### Doctrine (temp files only) ###
+/migrations/*.php~
+/migrations/__pycache__/
+/migrations/*.bak
+
+### Node / frontend tools ###
+/node_modules/
+/.npm/
+/public/build/
+/build/
+
+### IDE & system files ###
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+### Composer ###
+/vendor/
