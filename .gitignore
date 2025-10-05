@@ -6,6 +6,9 @@
 /config/secrets/*/decrypt.private.php
 /public/bundles/
 /var/
+/.env.test
+/.env.dev
+/.env.test.ignore
 
 ### PHPUnit ###
 /phpunit.xml

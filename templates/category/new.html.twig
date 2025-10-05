@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle catégorie{% endblock %}
+
+{% block body %}
+<h1>Créer une nouvelle catégorie</h1>
+
+{# Messages flash #}
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="flash-{{ label }}">{{ message }}</div>
+    {% endfor %}
+{% endfor %}
+
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-success mt-2">Sauvegarder</button>
+{{ form_end(form) }}
+
+<a href="{{ path('category_list') }}" class="btn btn-secondary mt-3">Retour à la liste</a>
+{% endblock %}
